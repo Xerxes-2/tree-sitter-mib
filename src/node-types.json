@@ -1,0 +1,1769 @@
+[
+  {
+    "type": "access_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "access_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "access_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "agent_capabilities_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "product_release_clause",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        },
+        {
+          "type": "supports_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "augments_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bit_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bits_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "enum_body",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compliance_group_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compliance_module_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "compliance_group_clause",
+          "named": true
+        },
+        {
+          "type": "compliance_object_clause",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "mandatory_groups_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compliance_object_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "access_value",
+          "named": true
+        },
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "syntax_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "contact_info_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "defval_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bit_list",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "description_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "display_hint_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enterprise_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enum_body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "enum_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enum_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "negative_number",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "import_from",
+    "named": true,
+    "fields": {
+      "module": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "import_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "import_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "imports",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "import_from",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "index_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "index_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "index_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "integer_constraints",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "enum_body",
+          "named": true
+        },
+        {
+          "type": "range_constraint",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "integer_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "integer_constraints",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "last_updated_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mandatory_groups_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_compliance_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compliance_module_clause",
+          "named": true
+        },
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "module_name",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "agent_capabilities_definition",
+          "named": true
+        },
+        {
+          "type": "imports",
+          "named": true
+        },
+        {
+          "type": "module_compliance_definition",
+          "named": true
+        },
+        {
+          "type": "module_identity_definition",
+          "named": true
+        },
+        {
+          "type": "notification_group_definition",
+          "named": true
+        },
+        {
+          "type": "notification_type_definition",
+          "named": true
+        },
+        {
+          "type": "object_group_definition",
+          "named": true
+        },
+        {
+          "type": "object_identifier_assignment",
+          "named": true
+        },
+        {
+          "type": "object_type_definition",
+          "named": true
+        },
+        {
+          "type": "sequence_definition",
+          "named": true
+        },
+        {
+          "type": "textual_convention_definition",
+          "named": true
+        },
+        {
+          "type": "trap_type_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_identity_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "contact_info_clause",
+          "named": true
+        },
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "last_updated_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "organization_clause",
+          "named": true
+        },
+        {
+          "type": "revision_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "named_oid_component",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "named_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "enum_body",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "range_constraint",
+          "named": true
+        },
+        {
+          "type": "size_constraint",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "negative_number",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "notification_group_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "notifications_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "notification_type_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "objects_clause",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "notifications_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "object_group_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "objects_clause",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "object_identifier_assignment",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "object_identifier_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "object_identifier_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "named_oid_component",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "object_type_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "access_clause",
+          "named": true
+        },
+        {
+          "type": "augments_clause",
+          "named": true
+        },
+        {
+          "type": "defval_clause",
+          "named": true
+        },
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "display_hint_clause",
+          "named": true
+        },
+        {
+          "type": "index_clause",
+          "named": true
+        },
+        {
+          "type": "object_identifier_value",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        },
+        {
+          "type": "syntax_clause",
+          "named": true
+        },
+        {
+          "type": "units_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "objects_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "organization_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "product_release_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "quoted_string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "range_constraint",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "range_spec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "range_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "negative_number",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "reference_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "revision_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sequence_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "sequence_field",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sequence_field",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "syntax_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sequence_of_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "size_constraint",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "range_spec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "module_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "status_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "status_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "status_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "string_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "size_constraint",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "supports_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "variation_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syntax_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "syntax_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syntax_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bits_type",
+          "named": true
+        },
+        {
+          "type": "integer_type",
+          "named": true
+        },
+        {
+          "type": "named_type",
+          "named": true
+        },
+        {
+          "type": "sequence_of_type",
+          "named": true
+        },
+        {
+          "type": "string_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "textual_convention_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "display_hint_clause",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "status_clause",
+          "named": true
+        },
+        {
+          "type": "syntax_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "trap_type_definition",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "enterprise_clause",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "reference_clause",
+          "named": true
+        },
+        {
+          "type": "variables_clause",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "units_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "quoted_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variables_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variation_clause",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "access_clause",
+          "named": true
+        },
+        {
+          "type": "defval_clause",
+          "named": true
+        },
+        {
+          "type": "description_clause",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "syntax_clause",
+          "named": true
+        },
+        {
+          "type": "syntax_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "\"\"",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "..",
+    "named": false
+  },
+  {
+    "type": "::=",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "ACCESS",
+    "named": false
+  },
+  {
+    "type": "AGENT-CAPABILITIES",
+    "named": false
+  },
+  {
+    "type": "AUGMENTS",
+    "named": false
+  },
+  {
+    "type": "BEGIN",
+    "named": false
+  },
+  {
+    "type": "BITS",
+    "named": false
+  },
+  {
+    "type": "CONTACT-INFO",
+    "named": false
+  },
+  {
+    "type": "CREATION-REQUIRES",
+    "named": false
+  },
+  {
+    "type": "Counter",
+    "named": false
+  },
+  {
+    "type": "Counter32",
+    "named": false
+  },
+  {
+    "type": "Counter64",
+    "named": false
+  },
+  {
+    "type": "DEFINITIONS",
+    "named": false
+  },
+  {
+    "type": "DEFVAL",
+    "named": false
+  },
+  {
+    "type": "DESCRIPTION",
+    "named": false
+  },
+  {
+    "type": "DISPLAY-HINT",
+    "named": false
+  },
+  {
+    "type": "END",
+    "named": false
+  },
+  {
+    "type": "ENTERPRISE",
+    "named": false
+  },
+  {
+    "type": "FROM",
+    "named": false
+  },
+  {
+    "type": "GROUP",
+    "named": false
+  },
+  {
+    "type": "Gauge32",
+    "named": false
+  },
+  {
+    "type": "IDENTIFIER",
+    "named": false
+  },
+  {
+    "type": "IMPLIED",
+    "named": false
+  },
+  {
+    "type": "IMPORTS",
+    "named": false
+  },
+  {
+    "type": "INCLUDES",
+    "named": false
+  },
+  {
+    "type": "INDEX",
+    "named": false
+  },
+  {
+    "type": "INTEGER",
+    "named": false
+  },
+  {
+    "type": "Integer32",
+    "named": false
+  },
+  {
+    "type": "IpAddress",
+    "named": false
+  },
+  {
+    "type": "LAST-UPDATED",
+    "named": false
+  },
+  {
+    "type": "MANDATORY-GROUPS",
+    "named": false
+  },
+  {
+    "type": "MAX-ACCESS",
+    "named": false
+  },
+  {
+    "type": "MIN-ACCESS",
+    "named": false
+  },
+  {
+    "type": "MODULE",
+    "named": false
+  },
+  {
+    "type": "MODULE-COMPLIANCE",
+    "named": false
+  },
+  {
+    "type": "MODULE-IDENTITY",
+    "named": false
+  },
+  {
+    "type": "NOTIFICATION-GROUP",
+    "named": false
+  },
+  {
+    "type": "NOTIFICATION-TYPE",
+    "named": false
+  },
+  {
+    "type": "NOTIFICATIONS",
+    "named": false
+  },
+  {
+    "type": "OBJECT",
+    "named": false
+  },
+  {
+    "type": "OBJECT-GROUP",
+    "named": false
+  },
+  {
+    "type": "OBJECT-TYPE",
+    "named": false
+  },
+  {
+    "type": "OBJECTS",
+    "named": false
+  },
+  {
+    "type": "OCTET",
+    "named": false
+  },
+  {
+    "type": "OF",
+    "named": false
+  },
+  {
+    "type": "ORGANIZATION",
+    "named": false
+  },
+  {
+    "type": "Opaque",
+    "named": false
+  },
+  {
+    "type": "PRODUCT-RELEASE",
+    "named": false
+  },
+  {
+    "type": "REFERENCE",
+    "named": false
+  },
+  {
+    "type": "REVISION",
+    "named": false
+  },
+  {
+    "type": "SEQUENCE",
+    "named": false
+  },
+  {
+    "type": "SIZE",
+    "named": false
+  },
+  {
+    "type": "STATUS",
+    "named": false
+  },
+  {
+    "type": "STRING",
+    "named": false
+  },
+  {
+    "type": "SUPPORTS",
+    "named": false
+  },
+  {
+    "type": "SYNTAX",
+    "named": false
+  },
+  {
+    "type": "TEXTUAL-CONVENTION",
+    "named": false
+  },
+  {
+    "type": "TRAP-TYPE",
+    "named": false
+  },
+  {
+    "type": "TimeTicks",
+    "named": false
+  },
+  {
+    "type": "UNITS",
+    "named": false
+  },
+  {
+    "type": "Unsigned32",
+    "named": false
+  },
+  {
+    "type": "VARIABLES",
+    "named": false
+  },
+  {
+    "type": "VARIATION",
+    "named": false
+  },
+  {
+    "type": "WRITE-SYNTAX",
+    "named": false
+  },
+  {
+    "type": "accessible-for-notify",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "current",
+    "named": false
+  },
+  {
+    "type": "deprecated",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "mandatory",
+    "named": false
+  },
+  {
+    "type": "not-accessible",
+    "named": false
+  },
+  {
+    "type": "not-implemented",
+    "named": false
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "obsolete",
+    "named": false
+  },
+  {
+    "type": "optional",
+    "named": false
+  },
+  {
+    "type": "read-create",
+    "named": false
+  },
+  {
+    "type": "read-only",
+    "named": false
+  },
+  {
+    "type": "read-write",
+    "named": false
+  },
+  {
+    "type": "write-only",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]

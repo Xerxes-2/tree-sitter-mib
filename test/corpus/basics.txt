@@ -1,0 +1,241 @@
+================================================================================
+Empty module
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    ))
+
+================================================================================
+Imports
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+IMPORTS
+    MODULE-IDENTITY, OBJECT-TYPE FROM SNMPv2-SMI
+    DisplayString                FROM SNMPv2-TC;
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (imports
+      (import_from
+        (import_list
+          (identifier)
+          (identifier))
+        module: (identifier))
+      (import_from
+        (import_list
+          (identifier))
+        module: (identifier)))))
+
+================================================================================
+Object identifier assignment
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+myObj OBJECT IDENTIFIER ::= { enterprises 12345 }
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (object_identifier_assignment
+      name: (identifier)
+      (object_identifier_value
+        (named_oid_component
+          (identifier))
+        (number)))))
+
+================================================================================
+Object type definition
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+deviceType OBJECT-TYPE
+    SYNTAX      OCTET STRING
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION "device type"
+    ::= { summary 1 }
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (object_type_definition
+      name: (identifier)
+      (syntax_clause
+        (syntax_type
+          (string_type)))
+      (access_clause
+        (access_value))
+      (status_clause
+        (status_value))
+      (description_clause
+        (quoted_string))
+      (object_identifier_value
+        (named_oid_component
+          (identifier))
+        (number)))))
+
+================================================================================
+Sequence definition
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+MyEntry ::= SEQUENCE {
+    myIndex     Integer32,
+    myName      OCTET STRING
+}
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (sequence_definition
+      name: (identifier)
+      (sequence_field
+        name: (identifier)
+        (syntax_type
+          (integer_type)))
+      (sequence_field
+        name: (identifier)
+        (syntax_type
+          (string_type))))))
+
+================================================================================
+Integer with enum constraint
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+myEnum OBJECT-TYPE
+    SYNTAX INTEGER {
+        enable(1),
+        disable(2)
+    }
+    MAX-ACCESS read-write
+    STATUS current
+    DESCRIPTION "enable or disable"
+    ::= { parent 1 }
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (object_type_definition
+      name: (identifier)
+      (syntax_clause
+        (syntax_type
+          (integer_type
+            (integer_constraints
+              (enum_body
+                (enum_value
+                  (identifier)
+                  (number))
+                (enum_value
+                  (identifier)
+                  (number)))))))
+      (access_clause
+        (access_value))
+      (status_clause
+        (status_value))
+      (description_clause
+        (quoted_string))
+      (object_identifier_value
+        (named_oid_component
+          (identifier))
+        (number)))))
+
+================================================================================
+Notification type
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+myTrap NOTIFICATION-TYPE
+    OBJECTS { portIndex }
+    STATUS current
+    DESCRIPTION "A trap"
+    ::= { traps 1 }
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (notification_type_definition
+      name: (identifier)
+      (objects_clause
+        (identifier))
+      (status_clause
+        (status_value))
+      (description_clause
+        (quoted_string))
+      (object_identifier_value
+        (named_oid_component
+          (identifier))
+        (number)))))
+
+================================================================================
+Module identity
+================================================================================
+
+TEST-MIB DEFINITIONS ::= BEGIN
+testMIB MODULE-IDENTITY
+    LAST-UPDATED "202301010000Z"
+    ORGANIZATION "Test Org"
+    CONTACT-INFO "test@test.com"
+    DESCRIPTION  "Test MIB"
+    REVISION     "202301010000Z"
+    DESCRIPTION  "Initial version"
+    ::= { enterprises 99999 }
+END
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (module_definition
+    name: (module_name
+      (identifier))
+    (module_identity_definition
+      name: (identifier)
+      (last_updated_clause
+        (quoted_string))
+      (organization_clause
+        (quoted_string))
+      (contact_info_clause
+        (quoted_string))
+      (description_clause
+        (quoted_string))
+      (revision_clause
+        (quoted_string)
+        (quoted_string))
+      (object_identifier_value
+        (named_oid_component
+          (identifier))
+        (number)))))

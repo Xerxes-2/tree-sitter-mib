@@ -1,0 +1,19 @@
+{
+  "grammars": [
+    {
+      "name": "mib",
+      "camelcase": "MIB",
+      "scope": "source.mib",
+      "path": ".",
+      "file-types": ["mib", "my"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Tree-sitter grammar for SNMP MIB files",
+    "links": {
+      "repository": "https://github.com/Xerxes-2/tree-sitter-mib"
+    }
+  }
+}

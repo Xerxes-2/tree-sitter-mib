@@ -1,0 +1,29 @@
+{
+  "name": "tree-sitter-mib",
+  "version": "1.0.0",
+  "description": "Tree-sitter grammar for SNMP MIB files",
+  "main": "bindings/node",
+  "scripts": {
+    "build": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
+  },
+  "keywords": ["tree-sitter", "mib", "snmp", "parser"],
+  "author": "Xerxes-2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xerxes-2/tree-sitter-mib"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "tree-sitter-cli": "^0.26.7"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.mib",
+      "file-types": ["mib", "my"],
+      "injection-regex": "mib"
+    }
+  ]
+}
